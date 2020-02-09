@@ -1,7 +1,7 @@
-#Development Level Up!
+# Development Level Up!
 > Curiosity demands to be extinguished.
 
-##What Is This Repository
+## What Is This Repository
 
 I am creating this repository in coordination with Anthony and Kevin to answer the unasked questions that come up during
 web development. A correct solution works because it builds upon underlying properties of the language specifications, 
@@ -26,7 +26,7 @@ that come up over the course of working on stories.
 
 ## Topics
 
-###Non Sequential Code Execution
+### Non Sequential Code Execution
 
 Web applications have a server that services many client applications over the network. This means that we need to build
 our functions to allow for asynchronous network calls occurring. If you have ever had a view fail to load because the 
