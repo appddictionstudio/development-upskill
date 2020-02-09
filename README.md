@@ -2,6 +2,7 @@
 > Curiosity demands to be extinguished.
 
 ##What Is This Repository
+
 I am creating this repository in coordination with Anthony and Kevin to answer the unasked questions that come up during
 web development. A correct solution works because it builds upon underlying properties of the language specifications, 
 network architecture, and human centered creation of a code base. These hidden factors are often invisible, and much
@@ -24,7 +25,9 @@ thinking about what kinds of google searches I am making. This will pay dividend
 that come up over the course of working on stories.
 
 ## Topics
+
 ###Non Sequential Code Execution
+
 Web applications have a server that services many client applications over the network. This means that we need to build
 our functions to allow for asynchronous network calls occurring. If you have ever had a view fail to load because the 
 GET request to the server had not finished yet, you have felt this pain.(The console message would mention it can not 

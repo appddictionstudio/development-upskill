@@ -1,16 +1,24 @@
 # Application Code and Time
+
 *Abstract: Some form of asynchronous functions are required for distributed systems. The nature of asynchronicity
  implies a stream of data. This data stream is handled using callback functions and other artifacts of functional
  programming models. Knowing how JavaScript can be asynchronous while having a single execution thread and how callback
  functions built into Promises and Async/Await will make working with network calls a routine procedure* 
+
 ## Section Headings
+
 ##### Synchronous Versus Asynchronous
+
 ##### JavaScript as a Single Threaded Language
+
 ##### Functional Programming and JavaScript
+
 ##### Callback Functions
+
 ##### Callbacks, Promises and Async/Await
 
 ##Synchronous Versus Asynchronous
+
 Synchronous code runs serially. That is one line after another, the classic example is:
 ```
 function printMessage(msg){
@@ -52,10 +60,14 @@ when discussing JavaScript execution.
 
 This idea of timeouts is important because any JavaScript we make a network request with must wait for a response.
 Depending on many conditions(distance to server, internet speed) this will be faster or slower.
+
 #### Troubleshooting Aside
+
 See timer.js for a breakdown of my troubleshooting. This is the google query I made: 
 [set timeout function ith variable](https://electrictoolbox.com/javascript-settimeout-variable-parameters/)
+
 ##JavaScript as a Single Threaded Language
+
 Outside of our scope here but node.js has 
 [worker threads](https://blog.logrocket.com/node-js-multithreading-what-are-worker-threads-and-why-do-they-matter-48ab102f8b10/).
 I am not familiar with node.js and am going to keep the focus on client side JavaScript for now.
@@ -79,7 +91,9 @@ really understand **HOW** JavaScript works we should talk about the
 I'm going to defer here to an amazing explanation about
 [What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ). Watching and understanding this
 video should be the one thing you take away from this subsection, possibly even this whole document.
+
 ##Functional Programming and JavaScript
+
 >In functional code, the output value of a function depends only on its arguments, so calling a function with the 
 >same value for an argument always produces the same result.
 >[Functional Programming](https://en.wikipedia.org/wiki/Functional_programming)
@@ -123,10 +137,12 @@ I apply a filter on the list for objects with less than a certain quantity
 A user alert is generated of each of the items in this list
 ```
 ##Callback Functions
+
 By the time I reached this section I felt like I had explained and/or referenced call back functions enough for the 
 purposes of this document. Open a PR or slack me if you want more expansion on this subsection. 
 
 ##Callbacks, Promises, and Async/Await
+
 Finally we arrive at the crux of our challenge. Promises and Async/Await are syntactically equivalent ways to make 
 network call responses blocking for everything that depends on them and non blocking for everything else. 
 
